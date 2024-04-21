@@ -3,7 +3,6 @@ import {
   Typography,
   Button,
   Container,
-h
   Table,
   TableBody,
   TableCell,
@@ -12,18 +11,14 @@ h
   TableRow,
   Paper,
   ButtonGroup,
-  Menu,
-  MenuItem,
 } from "@mui/material";
 import { Alert } from "@mui/material";
 
-import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 
 const MenuComponent = () => {
   const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
   const navigate = useNavigate();
   const theme = useTheme();
   const [menuItems, setMenuItems] = useState([]);
